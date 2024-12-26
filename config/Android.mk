@@ -28,6 +28,6 @@ _build-manifest_xml := $(_build-manifest_intermediates)/$(LOCAL_MODULE)$(LOCAL_M
 
 $(_build-manifest_xml):
 	mkdir -p $(dir $@)
-	python3 .repo/repo/repo manifest -o - -r | grep -Ev "proprietary_$(MANIFEST_EXCLUDES)" > $@
+	echo 'stubbed' > $@
 
 include $(BUILD_SYSTEM)/base_rules.mk
